@@ -1,24 +1,37 @@
 <html>
 <head>
-<meta charset=utf-8 />
-<title>videojs-contrib-hls embed</title>
-  
- 
-  <link href="video-js.css" rel="stylesheet">
-  <script src="video.js"></script>
-  <script src="videojs-contrib-hls.js"></script>
-  
 </head>
 <body>
-  <h1>Video.js Example Embed</h1>
 
-  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="740" height="440" 
-  data-setup='{}'>
-    <source src="http:\\media.fantv.hk\m3u8\archive\channel2.m3u8" type="application/x-mpegURL">
-  </video>
+<script>
+ 
+            function changeSrc(loc) {
+                document.getElementById('MyFrame').src = loc;
+            }
+      </script>
+ <button onclick="changeSrc('https://player.twitch.tv/?channel=cegami8590&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">C</button>
+<button onclick="changeSrc('https://player.twitch.tv/?channel=pkn123999&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">3</button>
+<button onclick="changeSrc('https://player.twitch.tv/?channel=Clscompany1&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">4</button>
+ <button onclick="changeSrc('https://player.twitch.tv/?channel=ayatv1&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">5</button>
+   <button onclick="changeSrc('https://player.twitch.tv/?channel=peter_918&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">6</button>
+    <button onclick="changeSrc('https://player.twitch.tv/?channel=rabbittvlittlegirl&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">7</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=azbycx0001&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">8</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=thankstwitch1222&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">9</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=fedex0215&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">10</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=satomictv&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">11</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=1984farm&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">12</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=cutjerlunstream2&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">13</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=hun121&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com')">14</button>
   
-  <script>
-  </script>
+ <iframe id=MyFrame src="https://player.twitch.tv/?channel=cegami8590&parent=olymchick.wixsite.com&parent=olymchick-wixsite-com.filesusr.com" frameborder="0" allowfullscreen="true" scrolling="no" height="480" width="790"></iframe>
+
+
+
+      
+
+</body>
+</html>
+
   <iframe
   id="chat_embed"
   src="https://www.twitch.tv/embed/hkc2021/chat?parent=thesm01.github.io&parent=thesm01.github.io"
