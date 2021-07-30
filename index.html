@@ -5,6 +5,29 @@
 </head>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+.MyFrame {
+  position: absolute;
+  top: 10;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+
+.mychat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+</style>
+
+
+
 
 <body>
 
@@ -23,15 +46,16 @@
     <button onclick="changeSrc('https://player.twitch.tv/?channel=rabbittvlittlegirl&parent=thesm01.github.io&parent=thesm01.github.io')">7</button>
   <button onclick="changeSrc('https://player.twitch.tv/?channel=azbycx0001&parent=thesm01.github.io&parent=thesm01.github.io')">8</button>
   <button onclick="changeSrc('https://player.twitch.tv/?channel=thankstwitch1222&parent=thesm01.github.io&parent=thesm01.github.io')">9</button>
-  <button onclick="changeSrc('https://player.twitch.tv/?channel=sfexpress0215&parent=thesm01.github.io&parent=thesm01.github.io')">10</button>
+  <button onclick="changeSrc('https://player.twitch.tv/?channel=fedex0215&parent=thesm01.github.io&parent=thesm01.github.io')">10</button>
   <button onclick="changeSrc('https://player.twitch.tv/?channel=satomictv&parent=thesm01.github.io&parent=thesm01.github.io')">11</button>
   <button onclick="changeSrc('https://player.twitch.tv/?channel=1984farm&parent=thesm01.github.io&parent=thesm01.github.io')">12</button>
   <button onclick="changeSrc('https://player.twitch.tv/?channel=cutjerlunstream2&parent=thesm01.github.io&parent=thesm01.github.io')">13</button>
   <button onclick="changeSrc('https://player.twitch.tv/?channel=hun121&parent=thesm01.github.io&parent=thesm01.github.io')">14</button>
 </div>
 <div id="video">
- <iframe id=MyFrame src="https://player.twitch.tv/?channel=cegami8590&parent=thesm01.github.io&parent=thesm01.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="480" width="790"></iframe>
+ <iframe id="MyFrame" class="MyFrame" src="https://player.twitch.tv/?channel=cegami8590&parent=thesm01.github.io&parent=thesm01.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="480" width="790"></iframe>
  <iframe
+ class="mychat"
   id="chat_embed"
   src="https://www.twitch.tv/embed/hkc2021/chat?parent=thesm01.github.io&parent=thesm01.github.io"
   height="567"
@@ -43,24 +67,6 @@
  
 </div>
 <script>
-$(function () {
-            $("#chat")
-                .resizable()
-                .draggable();           
-        });
-
-$(function () {
-            $("#video")
-                .resizable()
-                .draggable();           
-        });
-
-$(function () {
-            $("#choose")
-                .resizable()
-                .draggable();           
-        });
-
 
 </script>
 
